@@ -25,22 +25,39 @@
     </div>
   </div>
 
-  <!-- Navigation -->
-  <nav class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
-      <div class="text-xl font-bold text-[#1a3c5c]">BrightSmile</div>
-      <ul class="flex gap-6 text-sm font-medium">
-        <li><a href="index.html" class="hover:text-[#122622]">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="branches.html">Our Branches</a></li>
-        <li><a href="appointment.html">Book Appointment</a></li>
-        <li><a href="team.html">Our Team</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
+   <!-- Navigation -->
+<nav class="bg-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
+    <div class="text-xl font-bold text-[#1a3c5c]">BrightSmile</div>
 
+    <!-- Hamburger Icon (Mobile only) -->
+    <button id="menuToggle" class="md:hidden text-[#1a3c5c] focus:outline-none text-2xl">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Nav links (desktop) -->
+    <ul class="hidden md:flex gap-6 text-sm font-medium">
+      <li><a href="index.html" class="hover:text-[#122622]">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="branches.html">Our Branches</a></li>
+      <li><a href="appointment.html">Book Appointment</a></li>
+      <li><a href="team.html">Our Team</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 px-4 pb-4 text-sm font-medium bg-white">
+    <li><a href="index.html" class="block py-2 border-b">Home</a></li>
+    <li><a href="about.html" class="block py-2 border-b">About Us</a></li>
+    <li><a href="services.html" class="block py-2 border-b">Services</a></li>
+    <li><a href="branches.html" class="block py-2 border-b">Our Branches</a></li>
+    <li><a href="appointment.html" class="block py-2 border-b">Book Appointment</a></li>
+    <li><a href="team.html" class="block py-2 border-b">Our Team</a></li>
+    <li><a href="contact.html" class="block py-2">Contact Us</a></li>
+  </ul>
+</nav>
 
   <section class="bg-fixed bg-center bg-cover py-54 text-white" style="background-image: url('./assets/banner\ 4.png');">
     <div class="bg-black/60 text-center max-w-3xl mx-auto p-5 rounded">
@@ -102,6 +119,6 @@
     <div class="text-center mt-4 text-sm">&copy; 2025 BrightSmile Dental Clinic. All rights reserved.</div>
   </footer>
 
-
+<script src="./script.js"></script>
 </body>
 </html>
