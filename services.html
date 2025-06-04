@@ -40,9 +40,7 @@
       <li><a href="index.html" class="hover:text-[#122622]">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="branches.html">Our Branches</a></li>
       <li><a href="appointment.html">Book Appointment</a></li>
-      <li><a href="team.html">Our Team</a></li>
       <li><a href="contact.html">Contact Us</a></li>
     </ul>
   </div>
@@ -66,34 +64,97 @@
     </div>
   </section>
 
-  <section class="py-16 px-4 max-w-6xl mx-auto">
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="p-6 bg-white shadow rounded">
-        <h3 class="text-xl font-semibold mb-2">General Dentistry</h3>
-        <p>Cleanings, checkups, fillings, and oral exams to keep your mouth healthy.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded">
-        <h3 class="text-xl font-semibold mb-2">Cosmetic Dentistry</h3>
-        <p>Whitening, veneers, and smile makeovers to enhance your confidence.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded">
-        <h3 class="text-xl font-semibold mb-2">Orthodontics</h3>
-        <p>Braces and aligners to straighten teeth for children and adults.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded">
-        <h3 class="text-xl font-semibold mb-2">Pediatric Dentistry</h3>
-        <p>Gentle care for children from their first tooth onward.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded">
-        <h3 class="text-xl font-semibold mb-2">Root Canal Therapy</h3>
-        <p>Relieve pain and save your natural teeth with expert endodontic care.</p>
-      </div>
-      <div class="p-6 bg-white shadow rounded">
-        <h3 class="text-xl font-semibold mb-2">Dental Implants</h3>
-        <p>Permanent solutions for missing teeth using advanced implant systems.</p>
+  <!-- Services Section with Cards, Images, and Collapsible Text -->
+<section class="py-16 px-4 max-w-6xl mx-auto">
+  <div class="grid md:grid-cols-3 gap-6">
+
+    <!-- Paediatric Dentistry Card -->
+    <div class="bg-white shadow rounded overflow-hidden flex flex-col">
+      <img src="./assets/paediatric.jpg" alt="Paediatric Dentistry" class="h-40 w-full object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Paediatric Dentistry</h3>
+        <p class="text-sm text-gray-700 overflow-hidden transition-all duration-300 ease-in-out max-h-24 readmore-paragraph">
+          We encourage routine dental visits for a healthy experience rather than only when in pain. We invest time and resources to make children comfortable and happy during visits. Regular 6-month checkups help detect cavities early, allowing less traumatic and more cost-effective treatment options.
+        </p>
+        <button class="text-sm text-blue-600 mt-2 self-start readmore-toggle">Read more</button>
       </div>
     </div>
-  </section>
+
+    <!-- Preventive Dentistry Card -->
+    <div class="bg-white shadow rounded overflow-hidden flex flex-col">
+      <img src="./assets/preventive.jpg" alt="Preventive Dentistry" class="h-40 w-full object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Preventive Dentistry</h3>
+        <p class="text-sm text-gray-700 overflow-hidden transition-all duration-300 ease-in-out max-h-24 readmore-paragraph">
+          We conduct full oral examinations for all new patients to detect abnormalities. Our treatment plans are tailored to address health issues. Regular checkups and oral health education are part of our commitment to long-term dental wellness.
+        </p>
+        <button class="text-sm text-blue-600 mt-2 self-start readmore-toggle">Read more</button>
+      </div>
+    </div>
+
+    <!-- Restorative Dentistry Card -->
+    <div class="bg-white shadow rounded overflow-hidden flex flex-col">
+      <img src="./assets/restorative.jpg" alt="Restorative Dentistry" class="h-40 w-full object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Restorative Dentistry</h3>
+        <p class="text-sm text-gray-700 overflow-hidden transition-all duration-300 ease-in-out max-h-24 readmore-paragraph">
+          We rebuild decayed or broken teeth using durable restorative materials. Our focus is preserving teeth with minimal extraction. We use fluoride-leaching, cavity-adaptable composite fillings for both children and adults.
+        </p>
+        <button class="text-sm text-blue-600 mt-2 self-start readmore-toggle">Read more</button>
+      </div>
+    </div>
+
+    <!-- Endodontic Treatments Card -->
+    <div class="bg-white shadow rounded overflow-hidden flex flex-col">
+      <img src="./assets/endodontic.jpg" alt="Endodontic Treatments" class="h-40 w-full object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Endodontic Treatments</h3>
+        <p class="text-sm text-gray-700 overflow-hidden transition-all duration-300 ease-in-out max-h-24 readmore-paragraph">
+          Root canal treatment removes dead pulp tissue, seals the roots, and prevents infection. We use rapid radiographic imaging and advanced endo-motor systems to ensure complete sealing and long-lasting treatment.
+        </p>
+        <button class="text-sm text-blue-600 mt-2 self-start readmore-toggle">Read more</button>
+      </div>
+    </div>
+
+    <!-- Periodontic Treatments Card -->
+    <div class="bg-white shadow rounded overflow-hidden flex flex-col">
+      <img src="./assets/periodontic.jpg" alt="Periodontic Treatments" class="h-40 w-full object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Periodontic Treatments</h3>
+        <p class="text-sm text-gray-700 overflow-hidden transition-all duration-300 ease-in-out max-h-24 readmore-paragraph">
+          We treat gum, ligament, and jawbone diseases like gingivitis and periodontal disease. Early intervention prevents tooth loss and supports the success of other dental treatments.
+        </p>
+        <button class="text-sm text-blue-600 mt-2 self-start readmore-toggle">Read more</button>
+      </div>
+    </div>
+
+    <!-- Prosthetic Treatments Card -->
+    <div class="bg-white shadow rounded overflow-hidden flex flex-col">
+      <img src="./assets/prosthetic.jpg" alt="Prosthetic Treatments" class="h-40 w-full object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Prosthetic Treatments</h3>
+        <p class="text-sm text-gray-700 overflow-hidden transition-all duration-300 ease-in-out max-h-24 readmore-paragraph">
+          Tooth loss impacts chewing, speaking, and aesthetics. We restore function using porcelain crowns, chrome/acrylic dentures, and effective, efficient techniques.
+        </p>
+        <button class="text-sm text-blue-600 mt-2 self-start readmore-toggle">Read more</button>
+      </div>
+    </div>
+
+    <!-- Cosmetic Dentistry Card -->
+    <div class="bg-white shadow rounded overflow-hidden flex flex-col">
+      <img src="./assets/cosmetic.jpg" alt="Cosmetic Dentistry" class="h-40 w-full object-cover">
+      <div class="p-4 flex flex-col flex-grow">
+        <h3 class="text-xl font-semibold mb-2">Cosmetic Dentistry</h3>
+        <p class="text-sm text-gray-700 overflow-hidden transition-all duration-300 ease-in-out max-h-24 readmore-paragraph">
+          Our cosmetic services like veneers and whitening improve self-confidence. We use high-tech materials and offer in-chair or at-home whitening, with laser whitening also available.
+        </p>
+        <button class="text-sm text-blue-600 mt-2 self-start readmore-toggle">Read more</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Footer -->
     <footer class="bg-[#1a3c5c] text-white py-6">

@@ -16,3 +16,17 @@
       768: { slidesPerView: 3 },
     },
   });
+
+//  read more
+  document.querySelectorAll(".readmore-toggle").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const para = btn.previousElementSibling;
+      const isExpanded = para.classList.toggle("max-h-96");
+      if (isExpanded) {
+        btn.textContent = "Read less";
+      } else {
+        btn.textContent = "Read more";
+      }
+    });
+  });
+
