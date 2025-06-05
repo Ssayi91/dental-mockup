@@ -3,47 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Book Appointment – BrightSmile Dental</title>
+  <title>Book Appointment – Makadara Dental Centre</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
 <body class="font-sans text-gray-800">
 
  <!-- Top Banner -->
-  <div class="bg-[#1a3c5c] text-white text-sm py-2 px-4 flex flex-col md:flex-row justify-between items-center">
+  <div class="bg-[#a42191] text-white text-sm py-2 px-4 flex flex-col md:flex-row justify-between items-center">
     <div class="flex items-center gap-2">
-      <img src="logo.png" alt="Logo" class="h-8 w-auto"/>
+      <p class="ml-6 font-bold text-2xl">Madaraka Dental Centre</p>
     </div>
     <div class="flex items-center gap-4 mt-2 md:mt-0">
       <div><i class="fa-regular fa-clock"></i> Mon–Sat: 8am–6pm</div>
       <div><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</div>
-      <div class="flex gap-3">
-        <a href="#"><i class="fab fa-facebook hover:text-blue-400"></i></a>
-        <a href="#"><i class="fab fa-instagram hover:text-pink-400"></i></a>
-        <a href="#"><i class="fab fa-twitter hover:text-blue-300"></i></a>
+        <div class="flex gap-3">
+        <a href="https://www.facebook.com/profile.php?id=100063899029526" target="_blank"><i class="fab fa-facebook hover:text-blue-400"></i></a>
+        <a href="https://www.instagram.com/madarakadental/" target="_blank"><i class="fab fa-instagram hover:text-pink-400"></i></a>
+        <!-- <a href="#"><i class="fab fa-twitter hover:text-blue-300"></i></a> -->
       </div>
     </div>
   </div>
-
    <!-- Navigation -->
 <nav class="bg-white shadow sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
-    <div class="text-xl font-bold text-[#1a3c5c]">BrightSmile</div>
+    <!-- <div class="text-xl font-bold text-[#1a3c5c]">BrightSmile</div> -->
 
     <!-- Hamburger Icon (Mobile only) -->
-    <button id="menuToggle" class="md:hidden text-[#1a3c5c] focus:outline-none text-2xl">
+    <button id="menuToggle" class="md:hidden text-[#a42191] focus:outline-none text-2xl">
       <i class="fas fa-bars"></i>
     </button>
 
     <!-- Nav links (desktop) -->
-    <ul class="hidden md:flex gap-6 text-sm font-medium">
-      <li><a href="index.html" class="hover:text-[#122622]">Home</a></li>
+    <ul class="hidden md:flex gap-6 text-sm font-bold ml-auto">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="services.html">Services</a></li>
-      <li><a href="branches.html">Our Branches</a></li>
-      <li><a href="appointment.html">Book Appointment</a></li>
-      <li><a href="team.html">Our Team</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
+      <li><a href="appointment.html" class="nav-link active text-[#a42191] font-bold">Book Appointment - Contact</a></li>
     </ul>
   </div>
 
@@ -52,53 +48,120 @@
     <li><a href="index.html" class="block py-2 border-b">Home</a></li>
     <li><a href="about.html" class="block py-2 border-b">About Us</a></li>
     <li><a href="services.html" class="block py-2 border-b">Services</a></li>
-    <li><a href="branches.html" class="block py-2 border-b">Our Branches</a></li>
     <li><a href="appointment.html" class="block py-2 border-b">Book Appointment</a></li>
-    <li><a href="team.html" class="block py-2 border-b">Our Team</a></li>
     <li><a href="contact.html" class="block py-2">Contact Us</a></li>
   </ul>
 </nav>
 
-  <section class="py-24 bg-gradient-to-r from-[#1a3c5c] to-[#1a3c4c] text-white text-center">
-    <h1 class="text-4xl font-bold mb-4">Book Your Appointment</h1>
-    <p class="text-lg">We’re here when you need us — schedule easily below.</p>
+  <section class="h-[80vh] py-24 bg-center bg-cover bg-no-repeat text-white text-center relative" style="background-image: url('./assets/Blue\ Gradient\ Dental\ Health\ Facebook\ Fundraiser\ Cover\ Photo.png');">
+    <!-- <h1 class="text-4xl font-bold mb-4">Book Your Appointment</h1>
+    <p class="text-lg">We’re here when you need us — schedule easily below.</p> -->
   </section>
 
   <section class="py-16 px-4 max-w-2xl mx-auto">
-    <form action="https://wa.me/254712345678" target="_blank" class="bg-white shadow p-6 rounded space-y-4">
-      <input type="text" placeholder="Full Name" class="w-full border p-2 rounded" required />
-      <input type="email" placeholder="Email Address" class="w-full border p-2 rounded" required />
-      <input type="tel" placeholder="Phone Number" class="w-full border p-2 rounded" required />
-      <input type="date" class="w-full border p-2 rounded" required />
-      <textarea rows="3" placeholder="Message or Request" class="w-full border p-2 rounded"></textarea>
-      <button type="submit" class="bg-[#1a3c4c] text-white w-full py-2 rounded">Send via WhatsApp</button>
+    <div class="bg-white shadow p-6 rounded space-y-4 max-w-2xl mx-auto">
+    <h2 class="text-2xl font-bold text-center text-[#a42191] mb-4">Book Your Appointment</h2>
+    <form onsubmit="return sendToWhatsApp()" class="space-y-4">
+      <input type="text" id="name" placeholder="Full Name" class="w-full border p-2 rounded" required />
+      <input type="email" id="email" placeholder="Email Address" class="w-full border p-2 rounded" required />
+      <input type="tel" id="phone" placeholder="Phone Number" class="w-full border p-2 rounded" required />
+      <input type="date" id="date" class="w-full border p-2 rounded" required />
+      <select id="service" class="w-full border p-2 rounded" required>
+        <option value="">-- Select a Service --</option>
+        <option>Paediatric Dentistry</option>
+        <option>Preventive Dentistry</option>
+        <option>Restorative Dentistry</option>
+        <option>Endodontic Treatments</option>
+        <option>Periodontic Treatments</option>
+        <option>Prosthetic Treatments</option>
+        <option>Cosmetic Dentistry</option>
+        <option>Orthodontic Treatments</option>
+        <option>Minor Oral Surgeries</option>
+      </select>
+      <textarea id="message" rows="3" placeholder="Additional Message or Request" class="w-full border p-2 rounded"></textarea>
+      <button type="submit" class="bg-[#a42191] text-white w-full py-2 rounded">Send via WhatsApp</button>
     </form>
-  </section>
+  </div>
+
+  <!-- Contact Info & Map -->
+  <div class="grid md:grid-cols-2 gap-8 items-center mt-10">
+    <div class="space-y-4">
+      <h2 class="text-xl font-bold text-[#a42191]">Contact Information</h2>
+      <p><i class="fa-solid fa-phone mr-2 text-[#a42191]"></i> +254 737 853 782</p>
+      <p><i class="fa-solid fa-envelope mr-2 text-[#a42191]"></i> madarakadentalcentre@gmail.com</p>
+      <p><i class="fa-solid fa-clock mr-2 text-[#a42191]"></i> Mon–Sat: 8am–6pm</p>
+      <p><i class="fa-solid fa-location-dot mr-2 text-[#a42191]"></i> Madaraka, Nairobi, Kenya</p>
+    </div>
+    <div class="rounded overflow-hidden">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.804844950933!2d36.8189155!3d-1.3073534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f113561593c61%3A0x9c408af3b43db191!2sMadaraka%20Dental%20Centre!5e0!3m2!1sen!2ske!4v1717069688432!5m2!1sen!2ske" 
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="max-w-3xl mx-auto space-y-6 mt-8">
+    <h2 class="text-xl font-bold text-center text-[#a42191]">Frequently Asked Questions</h2>
+    <div class="space-y-3">
+      <details class="border p-4 rounded">
+        <summary class="font-semibold cursor-pointer">Do I need to book in advance?</summary>
+        <p class="mt-2 text-sm text-gray-600">Yes, we recommend booking an appointment in advance to ensure availability.</p>
+      </details>
+      <details class="border p-4 rounded">
+        <summary class="font-semibold cursor-pointer">Can I cancel or reschedule?</summary>
+        <p class="mt-2 text-sm text-gray-600">Yes, please inform us at least 24 hours in advance to cancel or reschedule.</p>
+      </details>
+      <details class="border p-4 rounded">
+        <summary class="font-semibold cursor-pointer">Do you accept walk-ins?</summary>
+        <p class="mt-2 text-sm text-gray-600">We accept walk-ins subject to availability. However, appointments take priority.</p>
+      </details>
+    </div>
+  </div>
+
+</section>
 
   <!-- Footer -->
-    <footer class="bg-[#1a3c5c] text-white py-6">
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left">
-      <div>
-        <h4 class="font-bold mb-2">BrightSmile Dental</h4>
-        <p>Bringing brighter smiles to Kenya and beyond.</p>
-      </div>
-      <div>
-        <h4 class="font-bold mb-2">Quick Links</h4>
-        <ul class="space-y-1">
-          <li><a href="services.html">Services</a></li>
-          <li><a href="appointment.html">Appointments</a></li>
-          <li><a href="branches.html">Our Branches</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="font-bold mb-2">Contact</h4>
-        <p>Phone: +254 712 345 678</p>
-        <p>Email: info@brightsmile.co.ke</p>
-      </div>
+  <footer class="bg-[#a42191] text-white py-6">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left">
+    <div>
+      <h4 class="font-bold mb-2 text-[18px]">Madaraka Dental Centre</h4>
+      <p>To be a leader in provision of integrated and accessible oral health services in the region.</p>
     </div>
-    <div class="text-center mt-4 text-sm">&copy; 2025 BrightSmile Dental Clinic. All rights reserved.</div>
-  </footer>
 
+    <div>
+      <h4 class="font-bold mb-2">Quick Links</h4>
+      <ul class="space-y-1">
+        <li><a href="services.html" class="hover:underline">Services</a></li>
+        <li><a href="appointment.html" class="hover:underline">Appointments</a></li>
+        <li><a href="branches.html" class="hover:underline">Our Branches</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="font-bold mb-2">Contact</h4>
+      <p>Phone: +254 737 853 782</p>
+      <p>Email: madarakadentalcentre@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-6 text-sm border-t border-white/20 pt-4">
+    &copy; 2025 Madaraka Dental Centre. All rights reserved.
+    <br />
+    <a 
+      href="https://sonnysayisolutions.co.ke" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      class="inline-block mt-1 transform transition-transform duration-1800 hover:scale-105"
+    >
+      Designed by S.S Solutions
+    </a>
+  </div>
+</footer>
 <script src="./script.js"></script>
 </body>
 </html>
