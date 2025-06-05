@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Madaraka Dental Centre</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link rel="stylesheet" href="dist/output.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
+
 <body class="font-sans text-gray-700">
 
   <!-- Top Banner -->
@@ -19,128 +21,141 @@
       <div><i class="fa-regular fa-clock"></i> Mon–Sat: 8am–6pm</div>
       <div><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</div>
       <div class="flex gap-3">
-        <a href="https://www.facebook.com/profile.php?id=100063899029526" target="_blank"><i class="fab fa-facebook hover:text-blue-400"></i></a>
-        <a href="https://www.instagram.com/madarakadental/" target="_blank"><i class="fab fa-instagram hover:text-pink-400"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100063899029526" target="_blank"><i
+            class="fab fa-facebook hover:text-blue-400"></i></a>
+        <a href="https://www.instagram.com/madarakadental/" target="_blank"><i
+            class="fab fa-instagram hover:text-pink-400"></i></a>
         <!-- <a href="#"><i class="fab fa-twitter hover:text-blue-300"></i></a> -->
       </div>
     </div>
   </div>
 
   <!-- Navigation -->
-<nav class="bg-white shadow sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
-    <!-- <div class="text-xl font-bold text-[#1a3c5c]">BrightSmile</div> -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
+      <!-- <div class="text-xl font-bold text-[#1a3c5c]">BrightSmile</div> -->
 
-    <!-- Hamburger Icon (Mobile only) -->
-    <button id="menuToggle" class="md:hidden text-[#1a3c5c] focus:outline-none text-2xl">
-      <i class="fas fa-bars"></i>
-    </button>
+      <!-- Hamburger Icon (Mobile only) -->
+      <button id="menuToggle" class="md:hidden text-[#1a3c5c] focus:outline-none text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
 
-    <!-- Nav links (desktop) -->
-    <ul class="hidden md:flex gap-6 text-sm font-bold ml-auto">
-      <li><a href="index.html" class="nav-link active text-[#a42191] font-bold">Home</a></li>
-      <li><a href="about.html"class="hover:text-[#a42191]">About Us</a></li>
-      <li><a href="services.html"class="hover:text-[#a42191]">Services</a></li>
-      <li><a href="appointment.html"class="hover:text-[#a42191]">Book Appointment - Contact</a></li>
+      <!-- Nav links (desktop) -->
+      <ul class="hidden md:flex gap-6 text-sm font-bold ml-auto">
+        <li><a href="index.html" class="nav-link active text-[#a42191] font-bold">Home</a></li>
+        <li><a href="about.html" class="hover:text-[#a42191]">About Us</a></li>
+        <li><a href="services.html" class="hover:text-[#a42191]">Services</a></li>
+        <li><a href="appointment.html" class="hover:text-[#a42191]">Book Appointment - Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu -->
+    <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 px-4 pb-4 text-sm font-medium bg-white">
+      <li><a href="index.html" class="block py-2 border-b nav-link active text-[#a42191] font-bold">Home</a></li>
+      <li><a href="about.html" class="block py-2 border-b">About Us</a></li>
+      <li><a href="services.html" class="block py-2 border-b">Services</a></li>
+      <li><a href="appointment.html" class="block py-2 border-b">Book Appointment - Contact</a></li>
     </ul>
-  </div>
-
-  <!-- Mobile Menu -->
-  <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 px-4 pb-4 text-sm font-medium bg-white">
-    <li><a href="index.html" class="block py-2 border-b">Home</a></li>
-    <li><a href="about.html" class="block py-2 border-b">About Us</a></li>
-    <li><a href="services.html" class="block py-2 border-b">Services</a></li>
-    <li><a href="appointment.html" class="block py-2 border-b">Book Appointment - Contact</a></li>
-  </ul>
-</nav>
+  </nav>
   <!-- Hero Banner Carousel -->
   <div class="relative overflow-hidden">
-    <div class="h-[80vh] bg-cover bg-center  bg-scroll md:bg-fixed flex items-center justify-center text-white text-center" style="background-image: url('./assets/attachments/FB_IMG_1748933415618.jpg');">
-      <div class="bg-black/30 p-5 rounded">
-        <h1 class="text-4xl font-bold mb-4">Smile Brighter With Us</h1>
-        <p class="mb-4 text-lg">We Exist to provide unparalleled comprehensive and specialized oral health services <br> that are
-        accessible, effective and equitable to all our clients.</p>
-        <div class="flex justify-center gap-4">
-          <a href="tel:+254737853782" class="bg-white text-[#a42191] px-4 py-2 rounded">Call Now</a>
-          <a href="appointment.html" class="bg-[#a42191] text-white px-4 py-2 rounded">Book Appointment</a>
+    <div
+      class="h-[36vh] md:h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-white text-center"
+      style="background-image: url('./assets/attachments/FB_IMG_1748933415618.jpg');">
+      <div class="bg-black/50 p-4 md:p-6 rounded w-[90%] md:w-auto max-w-2xl">
+        <h1 class="text-2xl md:text-4xl font-bold mb-3">Smile Brighter With Us</h1>
+        <p class="mb-4 text-sm md:text-lg leading-relaxed">
+          We exist to provide unparalleled, comprehensive and specialized oral health services
+          that are accessible, effective, and equitable to all our clients.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-3">
+          <a href="tel:+254737853782" class="bg-white text-[#a42191] px-4 py-2 rounded font-semibold">Call Now</a>
+          <a href="appointment.html" class="bg-[#a42191] text-white px-4 py-2 rounded font-semibold">Book
+            Appointment</a>
         </div>
       </div>
     </div>
   </div>
 
+
   <!-- About Section -->
-  <section class="h-[80vh] md:h-[90vh] bg-scroll md:bg-fixed bg-center bg-contain py-20 text-white" style="background-image: url('./assets/attachments/FB_IMG_1748933329663.jpg');">
-    <div class="bg-black/60 p-10 max-w-4xl mx-auto rounded">
-      <h2 class="text-[26px] font-bold mb-4">Madaraka Dental</h2>
-      <p class="mb-4 text-[18px]">Was opened on 15th March 2021 and still in operation. The initial staff
-                      structure consisted of one dentist, one dental assistant and a receptionist. During the course of
-                      the last few months in operation, the staff base has increased to include one more dental
-                      practitioner and a support staff. To date, Madaraka Dental Centre has one fully functioning
-                      operational dental unit with a dental specialist available for specialized dental care. The Clinic
-                      offers affordable dental services to our different classes of clients hence witnessing an increase
-                      in the number of patients visiting.</p>
+  <section class="h-[100vh] md:h-[70vh] bg-scroll md:bg-fixed bg-center bg-cover py-20 text-white;">
+    <div class="bg-black/60 p-10 max-w-4xl mx-auto rounded mb-10">
+      <h2 class="text-[26px] font-bold mb-4 text-white">Madaraka Dental</h2>
+      <p class="mb-8 text-[18px] text-white ">Was opened on 15th March 2021 and still in operation. The initial staff
+        structure consisted of one dentist, one dental assistant and a receptionist. During the course of
+        the last few months in operation, the staff base has increased to include one more dental
+        practitioner and a support staff. To date, Madaraka Dental Centre has one fully functioning
+        operational dental unit with a dental specialist available for specialized dental care. The Clinic
+        offers affordable dental services to our different classes of clients hence witnessing an increase
+        in the number of patients visiting.</p>
       <a href="appointment.html" class="bg-white text-[#a42191] px-4 py-2 rounded ">Book Appointment</a>
     </div>
   </section>
 
   <!-- Insurance Section -->
- <section class="bg-scroll md:bg-fixed bg-center bg-cover py-20 text-white" style="background-image: url('./assets/insurance.png');">
-  <div class="bg-black/10 p-10 max-w-5xl mx-auto rounded">
-    <h2 class="text-3xl font-bold mb-4 text-center">We Accept</h2>
-    <p class="mb-8 text-center">We partner with leading insurance companies:</p>
-    
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-      <!-- Card: Jubilee -->
-      <div class="bg-white bg-opacity-10 p-5 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/jubilee.jpg" alt="Jubilee Insurance" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">Jubilee</p>
-      </div>
-      
-      <!-- Card: SHA -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/sha.png" alt="SHA Insurance" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">SHA</p>
-      </div>
-      
-      <!-- Card: Equity Afya -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/equity afya.png" alt="Equity Afya" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">Equity Afya</p>
-      </div>
-      
-      <!-- Card: M-tiba Health -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/mtiba.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">M-Tiba</p>
-      </div>
-       <!-- Card: MAK Health -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/mak.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">Medical Administrators</p>
-      </div>
-       <!-- Card: UAP OLD Health -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/uap old.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">UAP-OLD Mutual</p>
-      </div>
-       <!-- Card: Sedgwick -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/Sedgwick.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">Sedgwick</p>
-      </div>
-       <!-- Card: GA -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/ga.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">GA</p>
-      </div>
-       <!-- Card: KA -->
-      <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
-        <img src="./assets/KA.png" alt="KA" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
-        <p class="text-white font-medium">Kenya Alliance</p>
+  <section class="bg-scroll md:bg-fixed bg-center bg-cover py-20 text-white mt-14"
+    style="background-image: url('./assets/insurance.png');">
+    <div class="bg-black/10 p-10 max-w-5xl mx-auto rounded">
+      <h2 class="text-3xl font-bold mb-4 text-center">We Accept</h2>
+      <p class="mb-8 text-center">We partner with leading insurance companies:</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+        <!-- Card: Jubilee -->
+        <div class="bg-white bg-opacity-10 p-5 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/jubilee.jpg" alt="Jubilee Insurance"
+            class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">Jubilee</p>
+        </div>
+
+        <!-- Card: SHA -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/sha.png" alt="SHA Insurance" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">SHA</p>
+        </div>
+
+        <!-- Card: Equity Afya -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/equity afya.png" alt="Equity Afya"
+            class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">Equity Afya</p>
+        </div>
+
+        <!-- Card: M-tiba Health -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/mtiba.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">M-Tiba</p>
+        </div>
+        <!-- Card: MAK Health -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/mak.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">Medical Administrators</p>
+        </div>
+        <!-- Card: UAP OLD Health -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/uap old.png" alt="Madison Health"
+            class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">UAP-OLD Mutual</p>
+        </div>
+        <!-- Card: Sedgwick -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/Sedgwick.png" alt="Madison Health"
+            class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">Sedgwick</p>
+        </div>
+        <!-- Card: GA -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/ga.png" alt="Madison Health" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">GA</p>
+        </div>
+        <!-- Card: KA -->
+        <div class="bg-white bg-opacity-10 p-4 rounded shadow hover:bg-opacity-20 transition">
+          <img src="./assets/KA.png" alt="KA" class="h-29 md:h-38 w-auto mx-auto mb-2 object-contain" />
+          <p class="text-white font-medium">Kenya Alliance</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
   <!-- Contact + Map + WhatsApp Chat -->
@@ -148,83 +163,77 @@
     <div class="grid md:grid-cols-2 gap-8">
       <div>
         <h3 class="text-2xl font-semibold mb-4">Find Us</h3>
-           <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.804844950933!2d36.8189155!3d-1.3073534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f113561593c61%3A0x9c408af3b43db191!2sMadaraka%20Dental%20Centre!5e0!3m2!1sen!2ske!4v1717069688432!5m2!1sen!2ske" 
-      width="100%" 
-      height="320" 
-      style="border: 5px;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.804844950933!2d36.8189155!3d-1.3073534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f113561593c61%3A0x9c408af3b43db191!2sMadaraka%20Dental%20Centre!5e0!3m2!1sen!2ske!4v1717069688432!5m2!1sen!2ske"
+          width="100%" height="320" style="border: 5px;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-     <div>
-  <h3 class="text-2xl font-semibold mb-4">Chat With Us</h3>
-  <form id="whatsappForm" class="bg-white p-6 rounded shadow">
-    <label class="block mb-2 font-medium">Name</label>
-    <input type="text" id="name" class="w-full border p-2 mb-4 rounded" placeholder="Your name" required>
+      <div>
+        <h3 class="text-2xl font-semibold mb-4">Chat With Us</h3>
+        <form id="whatsappForm" class="bg-white p-6 rounded shadow">
+          <label class="block mb-2 font-medium">Name</label>
+          <input type="text" id="name" class="w-full border p-2 mb-4 rounded" placeholder="Your name" required>
 
-    <label class="block mb-2 font-medium">Select Service</label>
-    <select id="service" class="w-full border p-2 mb-4 rounded" required>
-      <option value="" disabled selected>Select a service</option>
-      <option>Paediatric Dentistry</option>
-      <option>Preventive Dentistry</option>
-      <option>Restorative Dentistry</option>
-      <option>Endodontic Treatments</option>
-      <option>Periodontic Treatments</option>
-      <option>Prosthetic Treatments</option>
-      <option>Cosmetic Dentistry</option>
-      <option>Orthodontic Treatments</option>
-      <option>Minor Oral Surgeries</option>
-    </select>
+          <label class="block mb-2 font-medium">Select Service</label>
+          <select id="service" class="w-full border p-2 mb-4 rounded" required>
+            <option value="" disabled selected>Select a service</option>
+            <option>Paediatric Dentistry</option>
+            <option>Preventive Dentistry</option>
+            <option>Restorative Dentistry</option>
+            <option>Endodontic Treatments</option>
+            <option>Periodontic Treatments</option>
+            <option>Prosthetic Treatments</option>
+            <option>Cosmetic Dentistry</option>
+            <option>Orthodontic Treatments</option>
+            <option>Minor Oral Surgeries</option>
+          </select>
 
-    <label class="block mb-2 font-medium">Message</label>
-    <textarea id="message" class="w-full border p-2 mb-4 rounded" rows="3" placeholder="How can we help you?" required></textarea>
+          <label class="block mb-2 font-medium">Message</label>
+          <textarea id="message" class="w-full border p-2 mb-4 rounded" rows="3" placeholder="How can we help you?"
+            required></textarea>
 
-    <button type="submit" class="bg-[#a42191] text-white px-4 py-2 rounded w-full">Send via WhatsApp</button>
-  </form>
-</div>
+          <button type="submit" class="bg-[#a42191] text-white px-4 py-2 rounded w-full">Send via WhatsApp</button>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="bg-[#a42191] text-white py-6">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left">
-    <div>
-      <h4 class="font-bold mb-2 text-[18px]">Madaraka Dental Centre</h4>
-      <p>To be a leader in provision of integrated and accessible oral health services in the region.</p>
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <h4 class="font-bold mb-2 text-[18px]">Madaraka Dental Centre</h4>
+        <p>To be a leader in provision of integrated and accessible oral health services in the region.</p>
+      </div>
+
+      <div>
+        <h4 class="font-bold mb-2">Quick Links</h4>
+        <ul class="space-y-1">
+          <li><a href="services.html" class="hover:underline">Services</a></li>
+          <li><a href="appointment.html" class="hover:underline">Appointments</a></li>
+          
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-bold mb-2">Contact</h4>
+        <p>Phone: +254 737 853 782</p>
+        <p>Email: madarakadentalcentre@gmail.com</p>
+      </div>
     </div>
 
-    <div>
-      <h4 class="font-bold mb-2">Quick Links</h4>
-      <ul class="space-y-1">
-        <li><a href="services.html" class="hover:underline">Services</a></li>
-        <li><a href="appointment.html" class="hover:underline">Appointments</a></li>
-        <li><a href="branches.html" class="hover:underline">Our Branches</a></li>
-      </ul>
+    <div class="text-center mt-6 text-sm border-t border-white/20 pt-4">
+      &copy; 2025 Madaraka Dental Centre. All rights reserved.
+      <br />
+      <a href="https://sonnysayisolutions.co.ke" target="_blank" rel="noopener noreferrer"
+        class="inline-block mt-1 transform transition-transform duration-1800 hover:scale-105">
+        Designed by S.S Solutions
+      </a>
     </div>
+  </footer>
 
-    <div>
-      <h4 class="font-bold mb-2">Contact</h4>
-      <p>Phone: +254 737 853 782</p>
-      <p>Email: madarakadentalcentre@gmail.com</p>
-    </div>
-  </div>
-
-  <div class="text-center mt-6 text-sm border-t border-white/20 pt-4">
-    &copy; 2025 Madaraka Dental Centre. All rights reserved.
-    <br />
-    <a 
-      href="https://sonnysayisolutions.co.ke" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      class="inline-block mt-1 transform transition-transform duration-1800 hover:scale-105"
-    >
-      Designed by S.S Solutions
-    </a>
-  </div>
-</footer>
-
-<script src="./script.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
