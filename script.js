@@ -62,19 +62,17 @@ function sendToWhatsApp() {
   // insurance carousel
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.getElementById("carousel-track");
-  let scrollAmount = 0;
+  let scrollX = 0;
 
-  function scrollCarousel() {
-    scrollAmount += 1; // Adjust this value to control speed
-
-    // Reset position for infinite loop
-    if (scrollAmount >= track.scrollWidth / 2) {
-      scrollAmount = 0;
+  function move() {
+    scrollX += 1;
+    if (scrollX >= track.scrollWidth / 2) {
+      scrollX = 0;
     }
-
-    track.style.transform = `translateX(-${scrollAmount}px)`;
-    requestAnimationFrame(scrollCarousel);
+    track.style.transform = `translateX(-${scrollX}px)`;
+    requestAnimationFrame(move);
   }
 
-  scrollCarousel();
+  move();
 });
+
