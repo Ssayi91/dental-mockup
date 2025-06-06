@@ -1,0 +1,33 @@
+.insurance-strip {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f9f9f9;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.insurance-slider {
+  display: inline-block;
+  animation: scroll-left 25s linear infinite;
+}
+
+.insurance-slider img {
+  height: 40px;
+  margin: 0 30px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.insurance-slider img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

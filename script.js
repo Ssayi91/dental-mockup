@@ -58,3 +58,20 @@ function sendToWhatsApp() {
 
     window.open(whatsappUrl, "_blank");
   });
+
+  // insurance carousel
+   document.addEventListener("DOMContentLoaded", function () {
+  const track = document.getElementById("carousel-track");
+  let offset = 0;
+
+  function animateCarousel() {
+    offset += 0.5; // Adjust scroll speed here
+    if (offset >= track.scrollWidth / 2) {
+      offset = 0;
+    }
+    track.style.transform = `translateX(-${offset}px)`;
+    requestAnimationFrame(animateCarousel);
+  }
+
+  animateCarousel();
+});
