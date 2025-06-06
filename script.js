@@ -60,18 +60,21 @@ function sendToWhatsApp() {
   });
 
   // insurance carousel
-   document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const track = document.getElementById("carousel-track");
-  let offset = 0;
+  let scrollAmount = 0;
 
-  function animateCarousel() {
-    offset += 0.5; // Adjust scroll speed here
-    if (offset >= track.scrollWidth / 2) {
-      offset = 0;
+  function scrollCarousel() {
+    scrollAmount += 1; // Adjust this value to control speed
+
+    // Reset position for infinite loop
+    if (scrollAmount >= track.scrollWidth / 2) {
+      scrollAmount = 0;
     }
-    track.style.transform = `translateX(-${offset}px)`;
-    requestAnimationFrame(animateCarousel);
+
+    track.style.transform = `translateX(-${scrollAmount}px)`;
+    requestAnimationFrame(scrollCarousel);
   }
 
-  animateCarousel();
+  scrollCarousel();
 });
