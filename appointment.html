@@ -58,9 +58,13 @@
   </section>
 
   <section class="py-16 px-4 max-w-2xl mx-auto">
-    <div class="bg-white shadow p-6 rounded space-y-4 max-w-2xl mx-auto">
-    <h2 class="text-2xl font-bold text-center text-[#a42191] mb-4">Book Your Appointment</h2>
+<div class="bg-white shadow p-6 rounded space-y-4 max-w-4xl mx-auto">
+  <h2 class="text-2xl font-bold text-center text-[#a42191] mb-4">Book Your Appointment</h2>
+
+  <div class="grid md:grid-cols-2 gap-6">
+    <!-- WhatsApp Form -->
     <form onsubmit="return sendToWhatsApp()" class="space-y-4">
+      <h3 class="text-lg font-semibold text-[#a42191]">Send via WhatsApp</h3>
       <input type="text" id="name" placeholder="Full Name" class="w-full border p-2 rounded" required />
       <input type="email" id="email" placeholder="Email Address" class="w-full border p-2 rounded" required />
       <input type="tel" id="phone" placeholder="Phone Number" class="w-full border p-2 rounded" required />
@@ -80,28 +84,45 @@
       <textarea id="message" rows="3" placeholder="Additional Message or Request" class="w-full border p-2 rounded"></textarea>
       <button type="submit" class="bg-[#a42191] text-white w-full py-2 rounded">Send via WhatsApp</button>
     </form>
-  </div>
 
-  <!-- Contact Info & Map -->
-  <div class="grid md:grid-cols-2 gap-8 items-center mt-10">
-    <div class="space-y-4">
-      <h2 class="text-xl font-bold text-[#a42191]">Contact Information</h2>
-      <p><i class="fa-solid fa-phone mr-2 text-[#a42191]"></i> +254 737 853 782</p>
-      <p><i class="fa-solid fa-envelope mr-2 text-[#a42191]"></i> madarakadentalcentre@gmail.com</p>
-      <p><i class="fa-solid fa-clock mr-2 text-[#a42191]"></i> Mon–Sat: 8am–6pm</p>
-      <p><i class="fa-solid fa-location-dot mr-2 text-[#a42191]"></i> Madaraka, Nairobi, Kenya</p>
-    </div>
-    <div class="rounded overflow-hidden">
-      <iframe 
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.804844950933!2d36.8189155!3d-1.3073534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f113561593c61%3A0x9c408af3b43db191!2sMadaraka%20Dental%20Centre!5e0!3m2!1sen!2ske!4v1717069688432!5m2!1sen!2ske" 
-        width="100%" 
-        height="250" 
-        style="border:0;" 
-        allowfullscreen 
-        loading="lazy">
-      </iframe>
-    </div>
+    <!-- Email Form -->
+    <form onsubmit="return sendToEmail()" class="space-y-4">
+      <h3 class="text-lg font-semibold text-[#a42191]">Send via Email</h3>
+      <input type="text" id="nameEmail" placeholder="Full Name" class="w-full border p-2 rounded" required />
+      <input type="email" id="emailEmail" placeholder="Alternative Email Address" class="w-full border p-2 rounded" required />
+      <input type="tel" id="phoneEmail" placeholder="Phone Number" class="w-full border p-2 rounded" required />
+      <input type="date" id="dateEmail" class="w-full border p-2 rounded" required />
+      <select id="serviceEmail" class="w-full border p-2 rounded" required>
+        <option value="">-- Select a Service --</option>
+        <option>Paediatric Dentistry</option>
+        <option>Preventive Dentistry</option>
+        <option>Restorative Dentistry</option>
+        <option>Endodontic Treatments</option>
+        <option>Periodontic Treatments</option>
+        <option>Prosthetic Treatments</option>
+        <option>Cosmetic Dentistry</option>
+        <option>Orthodontic Treatments</option>
+        <option>Minor Oral Surgeries</option>
+      </select>
+      <textarea id="messageEmail" rows="3" placeholder="Additional Message or Request" class="w-full border p-2 rounded"></textarea>
+      <button type="submit" class="bg-[#a42191] text-white w-full py-2 rounded">Send via Email</button>
+    </form>
   </div>
+</div>
+
+<div class=" text-center mt-10"> 
+   <h2 class="text-2xl font-bold text-[#a42191] mb-4">We Value Your Feedback</h2>
+  <p class="text-gray-700 mb-6 max-w-xl mx-auto">
+    Help us improve by sharing your experience or suggestions via WhatsApp. We appreciate every comment!
+  </p>
+  <a 
+    href="https://wa.me/254737853782?text=Hello%20Madaraka%20Dental%20Centre%2C%20I%20would%20like%20to%20give%20feedback..." 
+    target="_blank"
+    class="inline-flex items-center gap-2 bg-[#a42191] text-white px-6 py-3 rounded-full text-lg hover:bg-[#8c1b7d] transition"
+  >
+    <i class="fab fa-whatsapp text-xl"></i> Send Feedback on WhatsApp
+  </a>
+</div>
 
   <!-- FAQ Section -->
   <div class="max-w-3xl mx-auto space-y-6 mt-8">
@@ -121,21 +142,31 @@
       </details>
     </div>
   </div>
+
+    <!-- Contact Info & Map -->
+  <div class="grid md:grid-cols-2 gap-8 items-center mt-10">
+    <div class="space-y-4">
+      <h2 class="text-xl font-bold text-[#a42191]">Contact Information</h2>
+      <p><i class="fa-solid fa-phone mr-2 text-[#a42191]"></i> +254 737 853 782</p>
+      <p><i class="fa-solid fa-envelope mr-2 text-[#a42191]"></i> madarakadentalcentre@gmail.com</p>
+      <p><i class="fa-solid fa-clock mr-2 text-[#a42191]"></i> Mon–Sat: 8am–6pm</p>
+      <p><i class="fa-solid fa-location-dot mr-2 text-[#a42191]"></i> Madaraka, Nairobi, Kenya</p>
+    </div>
+    <div class="rounded overflow-hidden">
+      <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.804844950933!2d36.8189155!3d-1.3073534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f113561593c61%3A0x9c408af3b43db191!2sMadaraka%20Dental%20Centre!5e0!3m2!1sen!2ske!4v1717069688432!5m2!1sen!2ske" 
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
 </section>
 <!-- WhatsApp Feedback Section -->
-<section class="bg-white py-12 px-4 text-center">
-  <h2 class="text-2xl font-bold text-[#a42191] mb-4">We Value Your Feedback</h2>
-  <p class="text-gray-700 mb-6 max-w-xl mx-auto">
-    Help us improve by sharing your experience or suggestions via WhatsApp. We appreciate every comment!
-  </p>
-  <a 
-    href="https://wa.me/254737853782?text=Hello%20Madaraka%20Dental%20Centre%2C%20I%20would%20like%20to%20give%20feedback..." 
-    target="_blank"
-    class="inline-flex items-center gap-2 bg-[#a42191] text-white px-6 py-3 rounded-full text-lg hover:bg-[#8c1b7d] transition"
-  >
-    <i class="fab fa-whatsapp text-xl"></i> Send Feedback on WhatsApp
-  </a>
-</section>
+
+
 
 
   <!-- Footer -->

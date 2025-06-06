@@ -41,7 +41,22 @@ function sendToWhatsApp() {
     window.open(url, '_blank');
     return false; // Prevent default form submission
   }
+// email
+ function sendToEmail() {
+    const name = document.getElementById("nameEmail").value;
+    const email = document.getElementById("emailEmail").value;
+    const phone = document.getElementById("phoneEmail").value;
+    const date = document.getElementById("dateEmail").value;
+    const service = document.getElementById("serviceEmail").value;
+    const message = document.getElementById("messageEmail").value;
 
+    const subject = `Appointment Request - ${name}`;
+    const body = `Hello Madaraka Dental Centre,%0A%0AI would like to book an appointment:%0A%0AFull Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0ADate: ${date}%0AService: ${service}%0AMessage: ${message}`;
+    const mailto = `mailto:madarakadentalcentre@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+    window.location.href = mailto;
+    return false;
+  }
   // index contact form
     document.getElementById("whatsappForm").addEventListener("submit", function (e) {
     e.preventDefault();
