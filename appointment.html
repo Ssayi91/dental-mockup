@@ -10,48 +10,54 @@
 <body class="font-sans text-gray-800">
 
  <!-- Top Banner -->
-  <div class="bg-[#a42191] text-white text-sm py-2 px-4 flex flex-col md:flex-row justify-between items-center">
-    <div class="flex items-center gap-2">
-      <p class="ml-6 font-bold text-2xl">Madaraka Dental Centre</p>
+   <!-- Top Banner -->
+    <div class="sticky top-0 z-50">
+  <div class="bg-white text-[12px] md:text-base py-2 px-4 flex flex-col md:flex-row justify-between items-center border-b border-gray-600">
+    <div class="flex items-center gap-3">
+       <img src="./assets/MDC Logo_250607_102736.jpg" alt="Madaraka Dental Logo" class="h-20 w-20 object-contain" />
     </div>
-    <div class="flex items-center gap-4 mt-2 md:mt-0">
-      <div><i class="fa-regular fa-clock"></i> Mon–Sat: 8am–6pm</div>
-      <div><i class="fa-solid fa-location-dot"></i> Nairobi, Kenya</div>
-        <div class="flex gap-3">
-        <a href="https://www.facebook.com/profile.php?id=100063899029526" target="_blank"><i class="fab fa-facebook hover:text-blue-400"></i></a>
-        <a href="https://www.instagram.com/madarakadental/" target="_blank"><i class="fab fa-instagram hover:text-pink-400"></i></a>
+    <div class="flex items-center gap-4 mt-2 md:mt-0 " style="color: #a42191;">
+      <div><i class="fa-solid fa-phone" style="color: #a42191;"></i>0769 308 996</div>
+      <div><i class="fa-regular fa-clock" style="color: #a42191;"></i> Mon–Sat: 8am–6pm</div>
+      <div><i class="fa-solid fa-location-dot" style="color: #a42191;"></i> Nairobi, Kenya</div>
+      <div class="flex gap-3">
+        <a href="https://www.facebook.com/profile.php?id=100063899029526" target="_blank"><i
+            class="fab fa-facebook hover:text-blue-400" style="color: #a42191;"></i></a>
+        <a href="https://www.instagram.com/madarakadental/" target="_blank"><i
+            class="fab fa-instagram hover:text-pink-400" style="color: #a42191;"></i></a>
         <!-- <a href="#"><i class="fab fa-twitter hover:text-blue-300"></i></a> -->
       </div>
     </div>
   </div>
+
    <!-- Navigation -->
-<nav class="bg-white shadow sticky top-0 z-50">
+<nav class="bg-[#a42191] text-white border-b border-white py-2 mb-1" >
   <div class="max-w-7xl mx-auto px-4 flex justify-between items-center py-3">
     <!-- <div class="text-xl font-bold text-[#1a3c5c]">BrightSmile</div> -->
 
     <!-- Hamburger Icon (Mobile only) -->
-    <button id="menuToggle" class="md:hidden text-[#a42191] focus:outline-none text-2xl">
+    <button id="menuToggle" class="md:hidden text-[#fff] focus:outline-none text-2xl">
       <i class="fas fa-bars"></i>
     </button>
 
     <!-- Nav links (desktop) -->
     <ul class="hidden md:flex gap-6 text-sm font-bold ml-auto">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="appointment.html" class="nav-link active text-[#a42191] font-bold">Book Appointment - Contact</a></li>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="about.html" >About Us</a></li>
+      <li><a href="services.html" >Services</a></li>
+      <li><a href="appointment.html"  class="nav-link active text-#00e5ff font-bold">Book Appointment - Contact</a></li>
     </ul>
   </div>
 
   <!-- Mobile Menu -->
-  <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 px-4 pb-4 text-sm font-medium bg-white">
-    <li><a href="index.html" class="block py-2 border-b">Home</a></li>
-    <li><a href="about.html" class="block py-2 border-b">About Us</a></li>
+  <ul id="mobileMenu" class="md:hidden hidden flex-col gap-4 px-4 pb-4 text-sm font-bold bg-white  text-gray-600">
+    <li><a href="index.html" class="block py-2 border-b ">Home</a></li>
+    <li><a href="about.html" class="block py-2 border-b ">About Us</a></li>
     <li><a href="services.html" class="block py-2 border-b">Services</a></li>
-    <li><a href="appointment.html" class="block py-2 border-b nav-link active text-[#a42191] font-bold">Book Appointment</a></li>
+    <li><a href="appointment.html" class="block py-2 border-b nav-link active text-[#a42191] font-bold">Book Appointment-Contact</a></li>
   </ul>
 </nav>
-
+</div>
   <section class="h-[15vh] md:h-[80vh] py-24 bg-center bg-cover bg-no-repeat text-white text-center relative" style="background-image: url('./assets/Blue\ Gradient\ Dental\ Health\ Facebook\ Fundraiser\ Cover\ Photo.png');">
     <!-- <h1 class="text-4xl font-bold mb-4">Book Your Appointment</h1>
     <p class="text-lg">We’re here when you need us — schedule easily below.</p> -->
@@ -124,24 +130,57 @@
   </a>
 </div>
 
-  <!-- FAQ Section -->
-  <div class="max-w-3xl mx-auto space-y-6 mt-8">
-    <h2 class="text-xl font-bold text-center text-[#a42191]">Frequently Asked Questions</h2>
-    <div class="space-y-3">
-      <details class="border p-4 rounded">
-        <summary class="font-semibold cursor-pointer">Do I need to book in advance?</summary>
-        <p class="mt-2 text-sm text-gray-600">Yes, we recommend booking an appointment in advance to ensure availability.</p>
-      </details>
-      <details class="border p-4 rounded">
-        <summary class="font-semibold cursor-pointer">Can I cancel or reschedule?</summary>
-        <p class="mt-2 text-sm text-gray-600">Yes, please inform us at least 24 hours in advance to cancel or reschedule.</p>
-      </details>
-      <details class="border p-4 rounded">
-        <summary class="font-semibold cursor-pointer">Do you accept walk-ins?</summary>
-        <p class="mt-2 text-sm text-gray-600">We accept walk-ins subject to availability. However, appointments take priority.</p>
-      </details>
-    </div>
+ <!-- FAQ Section -->
+<div class="max-w-3xl mx-auto space-y-6 mt-8">
+  <h2 class="text-xl font-bold text-center text-[#a42191]">Frequently Asked Questions</h2>
+  <div class="space-y-3">
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">Do I need to book in advance?</summary>
+      <p class="mt-2 text-sm text-gray-600">Yes, we recommend booking an appointment in advance to ensure availability.</p>
+    </details>
+
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">Can I cancel or reschedule?</summary>
+      <p class="mt-2 text-sm text-gray-600">Yes, please inform us at least 24 hours in advance to cancel or reschedule.</p>
+    </details>
+
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">Do you accept walk-ins?</summary>
+      <p class="mt-2 text-sm text-gray-600">We accept walk-ins subject to availability. However, appointments take priority.</p>
+    </details>
+
+    <!-- DENTAL-SPECIFIC QUESTIONS -->
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">What dental services do you offer?</summary>
+      <p class="mt-2 text-sm text-gray-600">We offer general dentistry, cosmetic procedures (such as whitening and veneers), root canal therapy, extractions, pediatric dentistry, and orthodontics.</p>
+    </details>
+
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">Is dental cleaning painful?</summary>
+      <p class="mt-2 text-sm text-gray-600">Most cleanings are not painful. You may feel some discomfort if you have gum sensitivity, but we make every effort to keep you comfortable.</p>
+    </details>
+
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">How often should I visit the dentist?</summary>
+      <p class="mt-2 text-sm text-gray-600">It’s recommended to visit the dentist every 6 months for a routine checkup and cleaning, even if you’re not experiencing any pain.</p>
+    </details>
+
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">Do you offer teeth whitening?</summary>
+      <p class="mt-2 text-sm text-gray-600">Yes, we provide professional teeth whitening that is safe, fast, and effective.</p>
+    </details>
+
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">Do you treat children?</summary>
+      <p class="mt-2 text-sm text-gray-600">Absolutely! We offer gentle and friendly pediatric dental care tailored for children of all ages.</p>
+    </details>
+
+    <details class="border p-4 rounded">
+      <summary class="font-semibold cursor-pointer">Do you accept SHA and if so which scheme? and any other insurance?</summary>
+      <p class="mt-2 text-sm text-gray-600">We accept a range of insurance providers. Please contact us to confirm if your insurance is supported.</p>
+    </details>
   </div>
+</div>
 
     <!-- Contact Info & Map -->
   <div class="grid md:grid-cols-2 gap-8 items-center mt-10">
